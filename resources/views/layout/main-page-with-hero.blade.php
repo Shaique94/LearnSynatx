@@ -47,23 +47,6 @@
     </section>
 @endsection
 @section('who_we_are')
-    <!-- Who We Are Section -->
-    <!-- <section class="py-16 bg-gradient-to-r from-gray-900 to-blue-900 text-white">
-        <div class="container mx-auto text-center max-w-4xl">
-            <h2 class="text-4xl font-bold text-blue-500 mb-6">Who We Are</h2>
-            <p class="text-lg text-gray-300 leading-relaxed mb-6">
-                Est. 2011 - Top Web Designing Company <br>
-                With more than 15 years of expertise in the field, we've established ourselves as an evolving Software Company. Over the years, we have diversified according to market needs. We optimize website rankings, boost campaign performance, enhance brand names, create quality content, and popularize brands on social media.
-            </p>
-            <h3 class="text-3xl font-bold text-blue-500 mb-4">Consider these steps for brand popularity in the Digital World:</h3>
-            <ul class="text-lg text-gray-300 space-y-2">
-                <li><strong>Define your goals</strong> - Set clear, measurable objectives for your brand.</li>
-                <li><strong>Identify your target audience</strong> - Know who you're reaching out to.</li>
-                <li><strong>Choose the right channels</strong> - Select platforms that align with your audience.</li>
-                <li><strong>Create and implement your campaigns</strong> - Develop creative strategies to engage your audience.</li>
-            </ul>
-        </div>
-    </section> -->
     <section class="py-24 relative bg-gradient-to-r from-gray-900 via-gray-800 to-black text-white">
     <div class="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
         <div class="w-full justify-start items-center gap-12 grid lg:grid-cols-2 grid-cols-1">
