@@ -15,6 +15,8 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/explore_courses',[PageController::class,'explore_courses'])->name('explore_courses');
+Route::get('/explore_courses/search',[PageController::class,'explore_courses_search'])->name('explore.courses_search');
+
 Route::get('/explore_courses/course_content/{courseId}/{courseSlug}',[PageController::class,'course_content'])->name('course_content');
 
 //user login and register routes below
@@ -51,6 +53,8 @@ Route::group(['prefix' =>'admin'],function(){
     
     
         Route::post('/add-course',[CourseController::class,'admin_add_course'])->name('admin.add_course');
+        Route::delete('/delete-course/{courseId}',[CourseController::class,'admin_delete_course'])->name('admin.delete_course');
+
     
         Route::post('/store-content/{chapter}', [AdminController::class, 'store_content'])->name('admin.store_content');
     

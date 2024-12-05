@@ -36,4 +36,13 @@ class CourseController extends Controller
     return redirect()->route('admin.dashboard')->with('success', 'Course created successfully.');
 }
 
+public function admin_delete_course($courseId){
+      // Fetch the course or fail
+      $course = Courses::findOrFail($courseId);
+      // Delete the course (cascading to chapters and content automatically)
+      $course->delete();
+      // Redirect with success message
+      return redirect()->back()->with('success', 'Course removed succesfully');
+}
+
 }

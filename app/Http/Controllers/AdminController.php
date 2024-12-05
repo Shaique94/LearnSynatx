@@ -15,7 +15,8 @@ class AdminController extends Controller
 
     public function admin_dashboard()
     {
-        $courses = Courses::orderBy('created_at', 'desc')->get();
+        // $courses = Courses::orderBy('created_at', 'desc')->get();
+        $courses = Courses::orderBy('created_at', 'desc')->paginate(4);
         return view("admin.create", compact('courses'));
     }
 

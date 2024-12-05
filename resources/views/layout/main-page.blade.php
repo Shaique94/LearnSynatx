@@ -7,6 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    
 </head>
 <body class="font-sans bg-gray-900 text-white">
     <!-- Toast Notification -->
@@ -44,22 +45,20 @@
     
     <!-- all courses available -->
     @yield('mainpage-content')
-
+    
     <!-- Courses List Section -->
-    <!-- <section id="courses" class="py-16 bg-gray-800"> -->
-        @yield('what_we_offer')
-    <!-- </section> -->
-    <!-- <section id="courses" class="py-16 bg-gray-800"> -->
-        @yield('who_we_are')
-    <!-- </section> -->
+    @yield('what_we_offer')
+    <!-- who we offer -->
+    @yield('who_we_are')
 
     <!-- Main Content -->
     <section id="content" class="py-10 bg-gray-800">
-        @yield('course-content')
+    @yield('course-content')
     </section>
 
     <!-- Footer -->
-        @yield('footer')
-    
+    @yield('footer')
+
+
 </body>
 </html>
