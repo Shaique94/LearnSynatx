@@ -24,7 +24,7 @@
 
 @section('what_we_offer')
     <!-- What We Offer Section -->
-    <section class="py-16 bg-gray-800 text-white">
+    <section class="py-16 bg-white dark:bg-gray-800 text-white">
         <div class="container mx-auto text-center">
             <h2 class="text-4xl font-bold text-blue-500 mb-8">What We Offer</h2>
             <div class="grid md:grid-cols-3 lg:grid-cols-3 gap-8">

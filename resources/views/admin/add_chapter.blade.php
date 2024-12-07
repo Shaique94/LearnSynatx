@@ -4,16 +4,7 @@
 <div class="container mx-auto my-8">
 
     <!-- Toast Notification -->
-    @if(session('success'))
-    <script>
-        Swal.fire({
-            title: "Success",
-            text: "{{ session('success') }}",
-            icon: "success",
-            timer: 5500
-        });
-    </script>
-    @endif
+    @include('toast-notification')
 
     <!-- Add Chapter Section -->
     <div class="bg-white shadow-lg rounded-lg p-6 mb-8">

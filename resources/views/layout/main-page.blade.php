@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Tech Courses')</title>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
-<body class="font-sans bg-gray-900 text-white">
+<body class="bg-white font-sans text-gray-800 dark:bg-gray-900 dark:text-white">
     <!-- Toast Notification -->
 @include('toast-notification')
     <!-- Header -->
@@ -52,9 +53,9 @@
     @yield('who_we_are')
 
     <!-- Main Content -->
-    <section id="content" class="py-10 bg-gray-800">
+    <!-- <section id="content" class="bg-white py-10 dark:bg-gray-800"> -->
     @yield('course-content')
-    </section>
+    <!-- </section> -->
 
     <!-- Footer -->
     @yield('footer')

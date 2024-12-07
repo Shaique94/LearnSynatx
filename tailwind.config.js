@@ -16,5 +16,6 @@ export default {
             },
         },
     },
-    plugins: [],
+    darkMode: 'media', // Use system-level dark mode
+    plugins: [],        
 };

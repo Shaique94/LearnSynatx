@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AdminLogin</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Login</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-900 text-white min-h-screen flex items-center justify-center">
+<body class="bg-white  text-white min-h-screen flex items-center justify-center dark:bg-gray-900">
 @include('toast-notification')
-    <div class="w-full max-w-md bg-gray-800 p-8 rounded-lg shadow-lg">
+    <div class="bg-white p-8 rounded-lg shadow-2xl w-full max-w-md dark:bg-gray-800">
         <!-- Back Link -->
         <a class="flex items-center text-sm text-gray-400 hover:text-white mb-6" href="{{ route('home') }}">
             <svg class="h-4 w-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -36,14 +37,15 @@
         Sign in with Google
     </a>
 </div>
-
         <!-- Divider -->
         <div class="relative my-6">
             <div class="absolute inset-0 flex items-center">
-                <div class="w-full border-t border-gray-700"></div>
+                <div class="w-full border-t border-700"></div>
             </div>
             <div class="relative flex justify-center text-sm">
-                <span class="px-2 bg-gray-800 text-gray-400">Or continue with</span>
+            <span class="bg-white px-2  text-gray-500 dark:bg-gray-800 dark:text-gray-400">
+            Or continue with
+            </span>
             </div>
         </div>
 
@@ -66,6 +68,9 @@
         </form>
 
         <!-- Footer Links -->
+        <div class="text-center mt-4 text-sm text-gray-400">
+            <a href="{{route('admin.login')}}" class="hover:underline">Admin Login</a>
+        </div>
         <div class="text-center mt-4 text-sm text-gray-400">
             <a href="/forgot-password" class="hover:underline">Forgot your password?</a>
         </div>
