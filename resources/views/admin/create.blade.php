@@ -6,7 +6,7 @@
     <div class="container">
         <!-- adding toast here -->
         @include('toast-notification')
-        <!-- component -->
+        
         <div class="bg-gray-100">
             <div class="header bg-white h-16 px-10 py-8 border-b-2 border-gray-200 flex items-center justify-between">
             </div>
